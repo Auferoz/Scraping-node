@@ -4,7 +4,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const urls = require('./urls');
 const { scrapeUrl } = require('./router');
 const { sendToSheet } = require('./utils/sendToSheet'); 
-const { saveToExcel } = require('./utils/saveToExcel');
+// const { saveToExcel } = require('./utils/saveToExcel');
 const { getFullDateTime } = require('./utils/date');
 
 async function main() {
