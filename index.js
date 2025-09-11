@@ -37,8 +37,8 @@ async function main() {
     console.log(`- Beneficios encontrados: ${beneficiosData.length}`);
 
     // ✅ Guardar Excel local
-    console.log('\n💾 Guardando archivo Excel...');
-    await saveToExcel({ planes: planesData, beneficios: beneficiosData });
+    // console.log('\n💾 Guardando archivo Excel...');
+    // await saveToExcel({ planes: planesData, beneficios: beneficiosData });
 
     // 📤 Enviar a Google Sheets vía SheetDB
     console.log('\n📤 Enviando datos a Google Sheets...');
