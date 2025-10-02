@@ -17,19 +17,27 @@ async function scrape(url, categoria, fullDateTime) {
             if (!edsCardAttr) return [];
 
             const jsonData = JSON.parse(edsCardAttr);
-            return jsonData.map(plan => ({
-                Companie: 'Entel',
-                Nombre: plan.type + ' ' + (plan.title || ''),
-                Gigas: plan.title || '',
-                PrecioOferta: plan.price || '',
-                PrecioNormal: (plan.priceLater || '').replace(/\D/g, ''),
-                Descuento: plan.label ? `${plan.label.text} ${plan.label.secondText || ''}` : (plan.tagSavings?.text || ''),
-                Beneficios: plan.details ? plan.details.map(d => d.text).join(' | ') : '',
-                TipoCampaña: 'Portabilidad',
-                Categoria: categoria,
-                URL: url,
-                Fecha: fullDateTime
-            }));
+            return jsonData.map(plan => {
+                let precioNormal = '';
+                if (plan.priceLater) {
+                    const digitsOnly = plan.priceLater.replace(/\D/g, '');
+                    precioNormal = digitsOnly.length > 5 ? digitsOnly.substring(1) : digitsOnly;
+                }
+
+                return {
+                    Companie: 'Entel',
+                    Nombre: plan.type + ' ' + (plan.title || ''),
+                    Gigas: plan.title || '',
+                    PrecioOferta: plan.price || '',
+                    PrecioNormal: precioNormal,
+                    Descuento: plan.label ? `${plan.label.text} ${plan.label.secondText || ''}` : (plan.tagSavings?.text || ''),
+                    Beneficios: plan.details ? plan.details.map(d => d.text).join(' | ') : '',
+                    TipoCampaña: 'Portabilidad',
+                    Categoria: categoria,
+                    URL: url,
+                    Fecha: fullDateTime
+                };
+            });
         }, { url, categoria, fullDateTime });
 
         results.push(...cardsData);
