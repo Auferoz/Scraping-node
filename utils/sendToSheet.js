@@ -2,7 +2,9 @@
 const axios = require('axios');
 
 // ==== CONFIG ====
-const SHEETDB_API_URL = 'https://sheetdb.io/api/v1/mv1wyv7au3gc0';
+const SHEETDB_API_URL = 'https://sheetdb.io/api/v1/mv1wyv7au3gc0'; // PRODUCCIÓN
+// const SHEETDB_API_URL = 'https://sheetdb.io/api/v1/fxge82f00xmcx'; // TEST
+
 // Chunk para evitar límites de tamaño en POST
 const CHUNK_SIZE = 100; // SheetDB tiene límites, reducimos el chunk
 // Reintentos básicos

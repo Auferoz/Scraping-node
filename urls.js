@@ -18,10 +18,10 @@ const urlsScraping = [
 
     { companie: 'Claro', categoria: 'Movil', url: 'https://www.clarochile.cl/personas/servicios/servicios-moviles/' },
 
-    // { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-portabilidad/individual/' },
-    // { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-individual/multimedia/#planes' },
-    // { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-individual/internet/#planes' },
-    // { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-individual/voz/#planes' },
+    { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-portabilidad/individual/' },
+    { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-individual/multimedia/#planes' },
+    { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-individual/internet/#planes' },
+    { companie: 'Mundo', categoria: 'Movil', url: 'https://www.tumundo.cl/movil/plan-individual/voz/#planes' },
 
 
 
@@ -47,14 +47,14 @@ const urlsScraping = [
 
     { companie: 'Claro', categoria: 'Hogar', url: 'https://www.clarochile.cl/personas/servicios/servicios-hogar/' },
 
-    // { companie: 'Mundo', categoria: 'Hogar', url: 'https://www.tumundo.cl/hogar/1-mundo/' },
-    // { companie: 'Mundo', categoria: 'Hogar', url: 'https://www.tumundo.cl/hogar/2-mundo/#planes' },
-    // { companie: 'Mundo', categoria: 'Hogar', url: 'https://www.tumundo.cl/hogar/3-mundo/#planes' },
+    { companie: 'Mundo', categoria: 'Hogar', url: 'https://www.tumundo.cl/hogar/1-mundo/' },
+    { companie: 'Mundo', categoria: 'Hogar', url: 'https://www.tumundo.cl/hogar/2-mundo/#planes' },
+    { companie: 'Mundo', categoria: 'Hogar', url: 'https://www.tumundo.cl/hogar/3-mundo/#planes' },
 
-    // { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-internet-fibra' },
-    // { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-duopack' },
-    // { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-duopack-lite' },
-    // { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-tripacks' },
+    { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-internet-fibra' },
+    { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-duopack' },
+    { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-duopack-lite' },
+    { companie: 'GTD', categoria: 'Hogar', url: 'https://www.gtd.cl/hogar/productos-hogar-tripacks' },
 
 
 
